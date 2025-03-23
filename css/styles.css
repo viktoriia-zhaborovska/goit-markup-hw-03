@@ -5,10 +5,40 @@ body {
   font-size: 16px;
   line-height: 1.5;
   background-color: #ffffff;
+  max-width: 1158px;
 }
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 156px;
+  margin: 0 auto;
+}
+
+/* header */
+
+.container-header {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -22,14 +52,31 @@ ul {
   text-decoration: none;
 }
 
+.header-logo {
+  padding: 24px 0;
+  margin-right: 76px;
+}
+
 .header-logo .logo-part {
   color: #2e2f42;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .nav-link {
   font-weight: 500;
   color: #2e2f42;
   text-decoration: none;
+  padding: 24px 0;
+  display: block;
 }
 
 .nav-link:hover {
@@ -40,11 +87,19 @@ ul {
   text-decoration: underline;
 }
 
+.adr-list {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
 .adr {
   font-style: normal;
+  margin-left: auto;
 }
 
 .adr-link {
+  display: block;
+  padding: 24px 0;
   text-decoration: none;
   color: #434455;
 }
@@ -54,8 +109,12 @@ ul {
   color: #404bbf;
 }
 
+/* title section */
+
 .page {
   background-color: #2e2f42;
+  padding: 120px 0;
+  align-items: center;
 }
 
 .page-title {
@@ -65,14 +124,28 @@ ul {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  max-width: 496px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
 }
 .page-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
   background: #4d5ae5;
   letter-spacing: 0.04em;
   font-weight: 500;
   line-height: 1.5;
   color: #fff;
   cursor: pointer;
+  border-radius: 4px;
+  padding: 16px 32px;
+  max-width: 169px;
+  height: 56px;
+  text-align: center;
 }
 
 .page-btn:hover,
@@ -80,8 +153,31 @@ ul {
   background-color: #404bbf;
 }
 
+/* features section */
+
 .feasures-title {
   letter-spacing: 0.02em;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.features-list {
+  display: flex;
+  padding: 120px 0;
+}
+.features-item {
+  width: calc((100% - 72) / 4);
 }
 
 .features-subtitle {
@@ -90,18 +186,29 @@ ul {
   font-size: 20px;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .features-text {
   color: #434455;
 }
 
+/* team section*/
+
 .team {
   background-color: #f4f4fd;
+  padding: 120px 0;
 }
 
 .team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team-item {
   background-color: #ffffff;
+  width: calc((100% - 72) / 4);
+  border-radius: 0 0 4px 4px;
 }
 
 .team-title {
@@ -112,8 +219,12 @@ ul {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
+.team-card {
+  padding: 32px 0;
+}
 .team-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -121,6 +232,7 @@ ul {
   text-align: center;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .team-text {
@@ -128,6 +240,24 @@ ul {
   color: #434455;
 }
 
+.team-image {
+  display: block;
+}
+
+/* portfolio section */
+.portfolio {
+  padding: 120px 0;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.portfolio-item {
+  width: calc((100%-48) / 3);
+}
 .portfolio-title {
   line-height: 1.11;
   font-weight: 700;
@@ -136,6 +266,20 @@ ul {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+.portfolio-image {
+  display: block;
+}
+
+.portfolio-card {
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  padding: 32px 16px;
+  width: 360px;
+  height: 120px;
 }
 
 .portfolio-subtitle {
@@ -144,14 +288,21 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .portfolio-text {
   color: #434455;
 }
+/*footer*/
 
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0;
+}
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo .logo-part {
@@ -160,4 +311,5 @@ ul {
 
 .footer-text {
   color: #f4f4fd;
+  max-width: 264px;
 }
