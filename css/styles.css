@@ -282,6 +282,10 @@ header {
   height: 120px;
 }
 
+.portfolio-image {
+  display: block;
+}
+
 .portfolio-subtitle {
   font-weight: 500;
   font-size: 20px;
