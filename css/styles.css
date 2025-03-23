@@ -144,7 +144,7 @@ header {
   border-radius: 4px;
   border: none;
   padding: 16px 32px;
-  max-width: 169px;
+  min-width: 169px;
   height: 56px;
 }
 
@@ -155,6 +155,9 @@ header {
 
 /* features section */
 
+.features {
+  padding: 120px 0;
+}
 .feasures-title {
   letter-spacing: 0.02em;
 }
@@ -174,10 +177,10 @@ header {
 
 .features-list {
   display: flex;
-  padding: 120px 0;
+  gap: 24px;
 }
 .features-item {
-  width: calc((100% - 72) / 4);
+  width: calc((100% - 72px) / 4);
 }
 
 .features-subtitle {
