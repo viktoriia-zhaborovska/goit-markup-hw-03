@@ -5,7 +5,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   background-color: #ffffff;
-  max-width: 1158px;
 }
 
 ul {
@@ -30,7 +29,7 @@ header {
 .container {
   max-width: 1158px;
   padding-left: 15px;
-  padding-right: 156px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 
